@@ -1,0 +1,14 @@
+{
+  "name": "myportfolio9.0",
+  "version": "1.0.0",
+  "description": "Web Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Anthony Mclamb",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
