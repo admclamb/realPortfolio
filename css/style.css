@@ -138,6 +138,14 @@ h5 {
   background-color: #422680;
   border: none; }
 
+.hr-md {
+  margin-left: auto;
+  margin-right: auto;
+  width: 8rem;
+  height: 10px;
+  background-color: #422680;
+  border: none; }
+
 .hr-md-left {
   margin-left: 0;
   margin-right: auto;
@@ -263,7 +271,8 @@ h5 {
 @media screen and (max-width: 1060px) {
   .footer--main-container {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: ".company." "products links contact"; }
+    grid-template-areas: ".company."
+ "products links contact"; }
     .footer--main-container > * {
       justify-self: start;
       align-items: center; }
@@ -274,7 +283,8 @@ h5 {
 @media screen and (max-width: 620px) {
   .footer--main-container {
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "company contact" "products links"; }
+    grid-template-areas: "company contact"
+ "products links"; }
     .footer--main-container > * {
       justify-self: start;
       align-items: center;
@@ -285,7 +295,10 @@ h5 {
 @media screen and (max-width: 589px) {
   .footer--main-container {
     grid-template-columns: 1fr;
-    grid-template-areas: "company" "products" "links" "contact"; }
+    grid-template-areas: "company"
+ "products"
+ "links"
+ "contact"; }
     .footer--main-container > * {
       justify-self: start;
       align-items: center; }
@@ -528,7 +541,7 @@ h5 {
   color: #fff; }
   .contact input {
     padding: 0.8rem;
-    background-color: #280659;
+    background-color: #8c64e2;
     border: none;
     width: 30rem; }
     .contact input::placeholder {
@@ -570,6 +583,10 @@ h5 {
     margin-bottom: 5rem;
     width: 50%; } }
 
+@media (max-width: 905px) {
+  .projects-container {
+    max-width: 100%; } }
+
 @media (max-width: 857px) {
   .hero-content {
     width: 85%; }
@@ -588,12 +605,29 @@ h5 {
   .projects-grid {
     grid-template-columns: 1fr;
     width: 100%; }
-  .projects-container {
+  .project-img {
     width: 100%; } }
 
 @media (max-width: 496px) {
   .contact input {
-    width: 110%; } }
+    width: 20rem; } }
+
+@media (max-width: 377px) {
+  .contact input {
+    width: 15rem; }
+  .hero-content {
+    margin-top: 10rem; } }
+
+@media screen and (max-width: 320px) {
+  .features {
+    gap: 0.9rem; }
+  .features--feature {
+    padding: 0; }
+  .hero-content {
+    margin-top: 5rem; }
+  .btn-offset,
+  .btn-offset--sub {
+    margin-top: -2rem; } }
 
 .project-showcase-container {
   color: #fff;
